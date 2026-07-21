@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: nanobackend
+    env: docker
+    image: ghcr.io/oki602960/nanobackend:latest
+    plan: starter
+    healthCheckPath: /
+    ports:
+      - port: 8080
+        protocol: http
+    autoDeploy: true
