@@ -1,6 +1,6 @@
 # nanobackend-render-deploy
 
-To repozytorium zawiera konfigurację do wdrożenia obrazu `ghcr.io/oki602960/nanobackend:latest` na platformie Render.
+To repozytorium zawiera konfigurację do wdrożenia aplikacji na platformie Render, budując obraz Docker na podstawie pliku `Dockerfile`.
 
 ## Wdrożenie na Render
 
@@ -9,7 +9,7 @@ Plik `render.yaml` definiuje usługę webową, która używa obrazu Docker z Git
 ### Konfiguracja Render
 
 Usługa jest skonfigurowana do:
-- Używania obrazu `ghcr.io/oki602960/nanobackend:latest`.
+- Budowania obrazu Docker na podstawie pliku `Dockerfile` znajdującego się w repozytorium.
 - Nasłuchiwania na porcie `8080`.
 - Posiadania ścieżki sprawdzania kondycji (`healthCheckPath`) ustawionej na `/`.
 
